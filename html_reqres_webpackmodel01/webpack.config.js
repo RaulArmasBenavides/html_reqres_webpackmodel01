@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin       = require('html-webpack-plugin'); 
 const MiniCssExtractPlugin    = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-
+//const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'); for webpack 5 use the plugin below
+const OptimizeCssAssetsPlugin = require('css-minimizer-webpack-plugin');
 module.exports = {
     mode: 'development',
     optimization: {
